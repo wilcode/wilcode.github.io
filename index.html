@@ -99,6 +99,20 @@
       text-underline-offset: 1px;
     }
 
+    .location {
+      margin: 4px 0 0;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0 8px;
+      margin-top: 14px;
+      font-style: normal;
+    }
+
     .profile {
       margin: 0 0 24px;
       font-weight: 400;
@@ -165,6 +179,14 @@
     }
 
     @media (max-width: 650px) {
+      .contact-links {
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .contact-links .separator {
+        display: none;
+      }
       main {
         padding: 48px 20px 56px;
       }
@@ -185,12 +207,15 @@
 <body>
   <main>
     <header>
-      <h1>Laura Elizabeth Wilkinson (she/her) · Maidenhead, UK</h1>
+      <h1>Laura Elizabeth Wilkinson (she/her)</h1>
+      <p class="location">Maidenhead, UK</p>
       <p class="strapline">Technical Leadership · Product Delivery · AI-Enabled Development</p>
-      <address>
+      <address class="contact-links">
         <a href="mailto:lau.eli.wil@gmail.com">lau.eli.wil@gmail.com</a>
-        · <a href="tel:+447954177190">+44 7954 177190</a>
-        · <a href="https://linkedin.com/in/lau-eli-wil" target="_blank" rel="noopener noreferrer">linkedin.com/in/lau-eli-wil</a>
+        <span class="separator" aria-hidden="true">·</span>
+        <a href="tel:+447954177190">+44 7954 177190</a>
+        <span class="separator" aria-hidden="true">·</span>
+        <a href="https://linkedin.com/in/lau-eli-wil" target="_blank" rel="noopener noreferrer">linkedin.com/in/lau-eli-wil</a>
       </address>
     </header>
 
