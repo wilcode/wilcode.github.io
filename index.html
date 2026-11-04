@@ -151,16 +151,7 @@
     }
 
     .job {
-      position: relative;
       margin-bottom: 20px;
-      padding-left: 18px;
-    }
-
-    .job::before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      top: 0;
     }
 
     .job ul {
@@ -172,19 +163,23 @@
       font-size: 17px;
       line-height: 1.4;
       font-weight: 400;
+    }
+
+    .role-title {
       text-decoration: underline;
       text-underline-offset: 2px;
     }
 
-    .employer {
-      margin: 0 0 12px;
+    .role-separator {
+      padding: 0 2px;
     }
 
-    .employer strong,
-    .education strong {
+    .employer {
       font-weight: 400;
-      text-decoration: underline dotted;
-      text-underline-offset: 2px;
+    }
+
+    .role-dates {
+      margin: 0 0 12px;
     }
 
     .skills li {
@@ -251,8 +246,8 @@
       <h2 id="experience-heading">Professional Background</h2>
 
       <article class="job">
-        <h3>Senior Software Engineer</h3>
-        <p class="employer"><strong>Maersk</strong><br>Nov 2022 – Present</p>
+        <h3><span class="role-title">Senior Software Engineer</span> <span class="role-separator">·</span> <span class="employer">Maersk</span></h3>
+        <p class="role-dates">Nov 2022 – Present</p>
         <ul>
           <li>• Led front-end delivery of new customer-facing applications from requirements and technical planning through testing, release and analytics- and feedback-led iteration.</li>
           <li>• Translated stakeholder and UX needs into development plans, aligning delivery across product, design and engineering.</li>
@@ -267,34 +262,33 @@
       </article>
 
       <article class="job">
-        <h3>Senior Front-End Engineer and Career Guide</h3>
-        <p class="employer"><strong>Collectiv Food</strong> · B2B food-distribution startup · £12m Series A funding<br>
-          Jun 2019 – Nov 2022</p>
+        <h3><span class="role-title">Senior Front-End Engineer and Career Guide</span> <span class="role-separator">·</span> <span class="employer">Collectiv Food</span></h3>
+        <p class="role-dates">Jun 2019 – Nov 2022</p>
         <ul>
-          <li>• Built the application’s front-end from scratch as the company’s first dedicated front-end engineer, then collaborated with the growing engineering team on continued delivery.</li>
+          <li>• Spearheaded the development of the application’s front-end as the company’s first dedicated front-end engineer for the fast-scaling B2B startup following its £12m Series A round, then collaborated with the growing engineering team on continued delivery.</li>
           <li>• Owned feature delivery from requirements through release and performance improvements during company-reported 200% customer-base growth in the year to July 2021.</li>
           <li>• Mentored new hires and, as Career Guide from January 2022, supported junior colleagues across functions with development goals and career progression.</li>
         </ul>
       </article>
 
       <article class="job">
-        <h3>Software Engineer (Front End)</h3>
-        <p class="employer"><strong>Zoopla</strong><br>Oct 2016 – Jun 2019</p>
+        <h3><span class="role-title">Software Engineer (Front End)</span> <span class="role-separator">·</span> <span class="employer">Zoopla</span></h3>
+        <p class="role-dates">Oct 2016 – Jun 2019</p>
       </article>
 
       <article class="job">
-        <h3>Front-End Web Developer</h3>
-        <p class="employer"><strong>Mumsnet</strong><br>May 2013 – Oct 2016</p>
+        <h3><span class="role-title">Front-End Web Developer</span> <span class="role-separator">·</span> <span class="employer">Mumsnet</span></h3>
+        <p class="role-dates">May 2013 – Oct 2016</p>
       </article>
 
       <article class="job">
-        <h3>Junior Web Developer</h3>
-        <p class="employer"><strong>Interactive Ward Lovett</strong><br>Aug 2011 – Sep 2012</p>
+        <h3><span class="role-title">Junior Web Developer</span> <span class="role-separator">·</span> <span class="employer">Interactive Ward Lovett</span></h3>
+        <p class="role-dates">Aug 2011 – Sep 2012</p>
       </article>
 
       <article class="job">
-        <h3>Software Engineering · 2:1</h3>
-        <p class="employer"><strong>Nottingham Trent University</strong><br>2009 – 2013</p>
+        <h3><span class="role-title">2:1 Software Engineering (BSc)</span> <span class="role-separator">·</span> <span class="employer">Nottingham Trent University</span></h3>
+        <p class="role-dates">2009–2013</p>
       </article>
     </section>
 
